@@ -1,5 +1,7 @@
 defrag C; /H /U /V
 chkdsk /f c:
+ipconfig / all
+ipconfig/ display DNS 
 ipconfig /flushdns
 ipconfig /registerdns
 ipconfig /release
