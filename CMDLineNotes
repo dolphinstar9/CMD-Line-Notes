@@ -1,11 +1,12 @@
 defrag C; /H /U /V
 chkdsk /f c:
 ipconfig / all
-ipconfig/ display DNS 
+ipconfig/ displaydns 
 ipconfig /flushdns
 ipconfig /registerdns
 ipconfig /release
 ipconfig /renew
+ipconfig / setclassid
 netsh winsock reset
 
 DISM.exe /Online /Cleanup-image /scanhealth
