@@ -1,0 +1,11 @@
+defrag C; /H /U /V
+chkdsk /f c:
+ipconfig /flushdns
+ipconfig /registerdns
+ipconfig /release
+ipconfig /renew
+netsh winsock reset
+
+DISM.exe /Online /Cleanup-image /scanhealth
+
+DISM.exe /Online /Cleanup-image /Restorehealth
